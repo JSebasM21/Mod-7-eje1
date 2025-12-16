@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animaciones CSS Avanzadas | Modern UI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <nav class="navbar">
+                <div class="logo">
+                    <i class="fas fa-magic"></i>
+                    <span>CSS Animations</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#animations">Animations</a></li>
+                    <li><a href="#effects">Effects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </nav>
+        </header>
+
+        <!-- Hero con animación -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="badge">Modern CSS</div>
+                    <h1 class="hero-title">Advanced <span class="gradient-text">Animations</span></h1>
+                    <p class="hero-subtitle">Explore cutting-edge CSS animations with smooth transitions, 3D effects, and interactive elements. Perfect for modern web design.</p>
+                    <div class="hero-buttons">
+                        <a href="#animations" class="btn btn-primary">
+                            <span>Explore Animations</span>
+                            <i class="fas fa-arrow-down"></i>
+                        </a>
+                        <a href="#effects" class="btn btn-outline">
+                            <span>View Effects</span>
+                            <i class="fas fa-play-circle"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="visual-element">
+                        <div class="cube">
+                            <div class="face front"></div>
+                            <div class="face back"></div>
+                            <div class="face left"></div>
+                            <div class="face right"></div>
+                            <div class="face top"></div>
+                            <div class="face bottom"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Scroll to discover</span>
+            </div>
+        </section>
+
+        <!-- Loading Spinner Section -->
+        <section id="animations" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Loading Animations</h2>
+                <p class="section-subtitle">Smooth loading indicators for modern interfaces</p>
+            </div>
+            <div class="loaders-grid">
+                <div class="loader-card">
+                    <div class="loader-wrapper">
+                        <div class="spinner modern-spinner"></div>
+                    </div>
+                    <h3>Neon Spinner</h3>
+                    <p>Smooth rotation with neon glow effect</p>
+                </div>
+                
+                <div class="loader-card">
+                    <div class="loader-wrapper">
+                        <div class="dots modern-dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                    <h3>Pulse Dots</h3>
+                    <p>Sequential pulsing animation</p>
+                </div>
+                
+                <div class="loader-card">
+                    <div class="loader-wrapper">
+                        <div class="pulse-ring modern-ring"></div>
+                    </div>
+                    <h3>Ripple Effect</h3>
+                    <p>Expanding ring with transparency</p>
+                </div>
+
+                <div class="loader-card">
+                    <div class="loader-wrapper">
+                        <div class="morphing-shape"></div>
+                    </div>
+                    <h3>Morphing Shape</h3>
+                    <p>Continuous shape transformation</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cards con hover effects -->
+        <section class="section dark-section">
+            <div class="section-header">
+                <h2 class="section-title">Hover Effects</h2>
+                <p class="section-subtitle">Interactive cards with modern hover animations</p>
+            </div>
+            <div class="cards-grid">
+                <div class="card card-flip">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <div class="card-icon">
+                                <i class="fas fa-sync-alt"></i>
+                            </div>
+                            <h3>3D Flip Card</h3>
+                            <p>Hover to flip the card and reveal content</p>
+                        </div>
+                        <div class="card-back">
+                            <h3>Flipped!</h3>
+                            <p>3D transformation with perspective</p>
+                            <div class="card-stats">
+                                <div class="stat">
+                                    <span class="stat-value">CSS</span>
+                                    <span class="stat-label">3D Transform</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">100%</span>
+                                    <span class="stat-label">Smooth</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-slide">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop&crop=center" alt="Code Editor">
+                        <div class="card-overlay">
+                            <div class="overlay-content">
+                                <h3>Slide Overlay</h3>
+                                <p>Content slides up on hover with gradient</p>
+                                <a href="#" class="overlay-link">View Details <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-zoom">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop&crop=center" alt="Colorful Design">
+                        <div class="card-content">
+                            <div class="card-badge">Popular</div>
+                            <h3>Zoom Effect</h3>
+                            <p>Image zooms on hover with parallax effect</p>
+                            <div class="card-footer">
+                                <div class="tags">
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">Animation</span>
+                                    <span class="tag">Hover</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-glow">
+                    <div class="card-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Glow Effect</h3>
+                    <p>Card glows and lifts on hover with shadow</p>
+                    <div class="card-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <span class="progress-text">Animation Level: 85%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Animaciones de entrada -->
+        <section id="effects" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Scroll Animations</h2>
+                <p class="section-subtitle">Elements that animate as you scroll down the page</p>
+            </div>
+            <div class="scroll-animations">
+                <div class="animate-on-scroll fade-in">
+                    <div class="animation-preview">
+                        <div class="preview-box"></div>
+                    </div>
+                    <div class="animation-info">
+                        <h3>Fade In</h3>
+                        <p>Element appears smoothly with opacity transition</p>
+                        <div class="animation-code">
+                            <code>animation: fadeIn 1s ease;</code>
+                        </div>
+                    </div>
+                </div>
+                <div class="animate-on-scroll slide-in-left">
+                    <div class="animation-preview">
+                        <div class="preview-box"></div>
+                    </div>
+                    <div class="animation-info">
+                        <h3>Slide from Left</h3>
+                        <p>Element slides in from the left with momentum</p>
+                        <div class="animation-code">
+                            <code>transform: translateX(-100px);</code>
+                        </div>
+                    </div>
+                </div>
+                <div class="animate-on-scroll slide-in-right">
+                    <div class="animation-preview">
+                        <div class="preview-box"></div>
+                    </div>
+                    <div class="animation-info">
+                        <h3>Slide from Right</h3>
+                        <p>Element slides in from the right with easing</p>
+                        <div class="animation-code">
+                            <code>transform: translateX(100px);</code>
+                        </div>
+                    </div>
+                </div>
+                <div class="animate-on-scroll zoom-in">
+                    <div class="animation-preview">
+                        <div class="preview-box"></div>
+                    </div>
+                    <div class="animation-info">
+                        <h3>Zoom In</h3>
+                        <p>Element scales up from the center point</p>
+                        <div class="animation-code">
+                            <code>transform: scale(0.5);</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Buttons con efectos -->
+        <section class="section dark-section">
+            <div class="section-header">
+                <h2 class="section-title">Button Animations</h2>
+                <p class="section-subtitle">Interactive buttons with modern animation effects</p>
+            </div>
+            <div class="buttons-grid">
+                <button class="btn btn-ripple">
+                    <span>Ripple Effect</span>
+                    <i class="fas fa-water"></i>
+                </button>
+                <button class="btn btn-slide">
+                    <span>Slide Background</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="btn btn-glow">
+                    <span>Glow Effect</span>
+                    <i class="fas fa-fire"></i>
+                </button>
+                <button class="btn btn-bounce">
+                    <span>Bounce Effect</span>
+                    <i class="fas fa-basketball-ball"></i>
+                </button>
+                <button class="btn btn-neumorphic">
+                    <span>Neumorphic</span>
+                    <i class="fas fa-cube"></i>
+                </button>
+                <button class="btn btn-gradient">
+                    <span>Gradient Shift</span>
+                    <i class="fas fa-palette"></i>
+                </button>
+            </div>
+        </section>
+
+        <!-- Texto animado -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Text Animations</h2>
+                <p class="section-subtitle">Creative text effects using pure CSS</p>
+            </div>
+            <div class="text-animations">
+                <div class="text-animation-block">
+                    <h1 class="glitch" data-text="GLITCH EFFECT">GLITCH EFFECT</h1>
+                    <p class="animation-desc">Glitch effect with multiple layers and color shifts</p>
+                </div>
+                <div class="text-animation-block">
+                    <h1 class="gradient-text-animated">Gradient Animation</h1>
+                    <p class="animation-desc">Animated gradient background with smooth color transitions</p>
+                </div>
+                <div class="text-animation-block">
+                    <h1 class="typing-text">Typing Animation...</h1>
+                    <p class="animation-desc">Simulates typing with cursor blinking effect</p>
+                </div>
+                <div class="text-animation-block">
+                    <h1 class="wavy-text">Wavy Text Effect</h1>
+                    <p class="animation-desc">Individual letter animation with wave pattern</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-magic"></i>
+                        <span>CSS Animations</span>
+                    </div>
+                    <p>Modern CSS animations for the next generation of web design.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-codepen"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Tutorials</a></li>
+                        <li><a href="#">Code Examples</a></li>
+                        <li><a href="#">Inspiration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Animations</h4>
+                    <ul>
+                        <li><a href="#animations">Loading</a></li>
+                        <li><a href="#effects">Hover Effects</a></li>
+                        <li><a href="#">Scroll Effects</a></li>
+                        <li><a href="#">Text Effects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for new animation techniques</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Modern CSS Animations. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> for the web community</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
